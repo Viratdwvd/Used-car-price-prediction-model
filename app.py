@@ -5,10 +5,10 @@ import pickle
 import base64
 
 # Load trained model and label encoders
-with open(r'C:\Users\Virat Dwivedi\Downloads\predictive_model.pkl', 'rb') as f:
+with open(r'predictive_model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-with open(r"C:\Users\Virat Dwivedi\Downloads\predictive_label.pkl", 'rb') as f:
+with open(r"predictive_label.pkl", 'rb') as f:
     label_encoders = pickle.load(f)
 
 # Define numerical and categorical column names
