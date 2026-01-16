@@ -5,10 +5,10 @@ import pickle
 import base64
 
 # Load trained model and label encoders
-with open(r'predictive_model.pkl', 'rb') as f:
+with open("predictive_model.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open(r"predictive_label.pkl", 'rb') as f:
+with open("predictive_label.pkl", "rb") as f:
     label_encoders = pickle.load(f)
 
 # Define numerical and categorical column names
@@ -108,7 +108,7 @@ def add_bg_from_local(image_file):
     )
 
 # Add background image
-add_bg_from_local(r"C:\Users\Virat Dwivedi\Pictures\download.jpeg")
+add_bg_from_local(r"D:\car price ML\ML-project\Used-Car-Price-Prediction-in-Major-Indian-Cities\Images\wallpaperflare.com_wallpaper (1).jpg")
 
 # Define Streamlit UI
 def main():
